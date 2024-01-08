@@ -13,10 +13,7 @@ pip3 install -r requirements.txt
 - **n0kovo's** wordlists: [Can be downloaded from here](https://github.com/n0kovo/n0kovo_subdomains)
 
 ## Usage
-You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you don't get blocked.
 ![SubFuzzer](https://dl.dropboxusercontent.com/scl/fi/arzciodtipmdlgp6htvte/subfuzzer-useage.jpg?rlkey=ucqka2moa5487a2z0qxff7drt&dl=0)
-Just fuzzing a domain?
-```
-python3 subfuzzer.py -d example.com -w wordlist.txt
-```
+You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you don't get blocked.
+
 
