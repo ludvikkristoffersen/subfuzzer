@@ -22,7 +22,7 @@ def save_to_file():
     good_urls_set = set(good_urls)
     if args.mode:
         for id, urls in enumerate(good_urls_set):
-            save = urls.removeprefix(args.mode+"://")
+            save = urls.removeprefix(args.mode.lower()+"://")
             with open(args.output, "a") as file:
                 file.write(save)
                 if id < len(good_urls_set) - 1:
