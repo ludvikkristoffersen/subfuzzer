@@ -132,7 +132,7 @@ if os.path.isfile(args.wordlist):
                 else:
                     print(f"{Fore.GREEN + 'FOUND:' + Style.RESET_ALL} {gurl.removeprefix('https://')}")
             print("-"*95)
-            print(Fore.YELLOW + f"Trying: {url}" + Style.RESET_ALL)
+            print(Fore.YELLOW + f"Trying: {url.lower()}" + Style.RESET_ALL)
             progress_bar = create_progress_bar(i, total_words)
             print("\nProgress:", progress_bar, end='', flush=True)
             print("\n\n")
@@ -142,7 +142,7 @@ if os.path.isfile(args.wordlist):
             else:
                 print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C ' + Fore.BLUE + 'or' + Fore.MAGENTA + ' CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing." + Style.RESET_ALL)
                 print("\n")
-    if len(good_urls) > 1:
+    if len(good_urls) >= 1:
         print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomains for {args.domain}!" + Style.RESET_ALL)
         if args.output:
             save_to_file()
