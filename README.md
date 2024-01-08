@@ -14,6 +14,6 @@ pip3 install -r requirements.txt
 
 ## Usage
 ![SubFuzzer](https://dl.dropboxusercontent.com/scl/fi/arzciodtipmdlgp6htvte/subfuzzer-useage.jpg?rlkey=ucqka2moa5487a2z0qxff7drt&dl=0)
-You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you don't get blocked.
+You can specify how fast the fuzzing should go by using the **-s** and **-t** options, but be careful, sending loads of requests to a domain might get you blocked from that domain for some time.
 
 
