@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 ```
 ## Wordlist recommendations
 - **Dirbuster** wordlists that comes with Kali Linux, found here: **/usr/share/wordlists/dirb/dirbuster**
-- **n0kovo's** wordlists: .[Can be downloaded from here].(https://github.com/n0kovo/n0kovo_subdomains)
+- **n0kovo's** wordlists: [Can be downloaded from here](https://github.com/n0kovo/n0kovo_subdomains)
 
 ## Usage
 You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you don't get blocked.
