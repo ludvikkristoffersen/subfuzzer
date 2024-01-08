@@ -106,7 +106,7 @@ if os.path.isfile(args.wordlist):
                 failed_attempts += 1
             except KeyboardInterrupt:
                 if len(good_urls) >= 1:
-                    print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomains for {args.domain}!" + Style.RESET_ALL)
+                    print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomain(s) for {args.domain}!" + Style.RESET_ALL)
                     if args.output:
                         save_to_file()
                     quit()
@@ -143,7 +143,7 @@ if os.path.isfile(args.wordlist):
                 print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C ' + Fore.BLUE + 'or' + Fore.MAGENTA + ' CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing." + Style.RESET_ALL)
                 print("\n")
     if len(good_urls) >= 1:
-        print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomains for {args.domain}!" + Style.RESET_ALL)
+        print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomain(s) for {args.domain}!" + Style.RESET_ALL)
         if args.output:
             save_to_file()
     else:
