@@ -22,7 +22,7 @@ def save_to_file():
     good_urls_set = set(good_urls)
     if args.mode:
         for id, urls in enumerate(good_urls_set):
-            save = urls.removeprefix(args.mode+"://")
+            save = urls.removeprefix(mode+"://")
             with open(args.output, "a") as file:
                 file.write(save)
                 if id < len(good_urls_set) - 1:
@@ -44,7 +44,7 @@ failed_attempts = 0
 # Check's on the arguments
 if args.mode:
     if args.mode.lower() == "http" or args.mode.lower() == "https":
-        pass
+        mode = args.mode.lower()
     else:
         print(Fore.RED + "Arguments for (-m) must be either http or https.")
         quit()
@@ -86,8 +86,8 @@ if os.path.isfile(args.wordlist):
 
             try:
                 if args.mode:
-                    if args.mode.lower() == "http" or args.mode.lower() == "https":
-                        url = f"{args.mode}://{clean_line}.{args.domain}"
+                    if mode == "http" or mode == "https":
+                        url = f"{mode}://{clean_line}.{args.domain}"
                 else:
                     url = f"https://{clean_line}.{args.domain}"
                 if args.timeout:
@@ -127,12 +127,12 @@ if os.path.isfile(args.wordlist):
             print("-"*95)
             for gurl in good_urls:
                 if args.mode:
-                    if args.mode.lower() == "http" or args.mode.lower() == "https":
-                        print(f"{Fore.GREEN + 'FOUND:' + Style.RESET_ALL} {gurl.removeprefix(args.mode+'://')}")
+                    if mode == "http" or mode == "https":
+                        print(f"{Fore.GREEN + 'FOUND:' + Style.RESET_ALL} {gurl.removeprefix(mode+'://')}")
                 else:
                     print(f"{Fore.GREEN + 'FOUND:' + Style.RESET_ALL} {gurl.removeprefix('https://')}")
             print("-"*95)
-            print(Fore.YELLOW + f"Trying: {url.lower()}" + Style.RESET_ALL)
+            print(Fore.YELLOW + f"Trying: {url}" + Style.RESET_ALL)
             progress_bar = create_progress_bar(i, total_words)
             print("\nProgress:", progress_bar, end='', flush=True)
             print("\n\n")
