@@ -137,10 +137,10 @@ if os.path.isfile(args.wordlist):
             print("\nProgress:", progress_bar, end='', flush=True)
             print("\n\n")
             if args.output:
-                print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C' + Fore.BLUE 'or' + Fore.MAGENTA + 'CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing and save the results to the file '{Fore.WHITE + args.output + Fore.BLUE}'." + Style.RESET_ALL)
+                print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C' + Fore.BLUE + 'or' + Fore.MAGENTA + 'CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing and save the results to the file '{Fore.WHITE + args.output + Fore.BLUE}'." + Style.RESET_ALL)
                 print("\n")
             else:
-                print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C' + Fore.BLUE 'or' + Fore.MAGENTA + 'CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing." + Style.RESET_ALL)
+                print(Fore.BLUE + f"Press {Fore.MAGENTA + 'CTRL+C' + Fore.BLUE + 'or' + Fore.MAGENTA + 'CTRL+ALT+C' + Fore.BLUE} to stop the fuzzing." + Style.RESET_ALL)
                 print("\n")
     if len(good_urls) > 1:
         print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomains for {args.domain}!" + Style.RESET_ALL)
