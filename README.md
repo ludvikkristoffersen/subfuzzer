@@ -17,7 +17,7 @@ git clone https://github.com/luddekn/subfuzzer
 pip3 install -r requirements.txt
 ```
 ## Usage
-You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you do not get blocked.
+You can specify how fast the fuzzing should go by using the **-s** and **-t** options, although be careful by going too fast so you don't get blocked.
 ```
 usage: subfuzzer.py [-h] -d DOMAIN -w WORDLIST [-m MODE] [-s SPEED] [-t TIMEOUT] [-o OUTPUT]
 
