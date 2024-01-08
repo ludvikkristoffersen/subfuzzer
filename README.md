@@ -7,7 +7,7 @@
 \____/  \__,_||_.__/ \_|   \__,_|/___|/___|\___||_| 
  ------------------------------------ By Ludde ----
 ```
-A subdomain fuzzer that uses a user-specified wordlist to enumerate subdomains for a domain.
+A subdomain fuzzer that uses a user-specified wordlist to find subdomains for a domain.
 
 ## Installation
 ```
