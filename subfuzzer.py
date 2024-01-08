@@ -105,7 +105,7 @@ if os.path.isfile(args.wordlist):
             except requests.exceptions.RequestException:
                 failed_attempts += 1
             except KeyboardInterrupt:
-                if len(good_urls) > 1:
+                if len(good_urls) >= 1:
                     print(Fore.CYAN + f"Fuzzing finished, found {len(good_urls)} subdomains for {args.domain}!" + Style.RESET_ALL)
                     if args.output:
                         save_to_file()
