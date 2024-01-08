@@ -5,7 +5,7 @@ import requests
 import time
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-d", "--domain", required=True, help="Specify the domain you want to enumerate.")
+parser.add_argument("-d", "--domain", required=True, help="Specify the domain you want to find subdomains for.")
 parser.add_argument("-w", "--wordlist", required=True, help="Provide the path to the wordlist file you would like to use.")
 parser.add_argument("-m", "--mode", required=False, help="Specify if you want to search with HTTP or HTTPS, HTTPS is used if not specified.")
 parser.add_argument("-s", "--speed", required=False, help="Specify the amount of time between successful requests (in seconds). Default is 1 second.")
