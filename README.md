@@ -1,13 +1,4 @@
 ![SubFuzzer](https://dl.dropboxusercontent.com/scl/fi/vbns1l45udetirwnc9ngx/subfuzzer.jpg.jpg?rlkey=982a8juoq686qze59ym726wbf&dl=0)
-```
- _____         _     ______                           
-/  ___|       | |    |  ___|                          
-\ `--.  _   _ | |__  | |_  _   _  ____ ____ ___  _ __ 
- `--. \| | | || '_ \ |  _|| | | ||_  /|_  // _ \| '__|
-/\__/ /| |_| || |_) || |  | |_| | / /  / /|  __/| |   
-\____/  \__,_||_.__/ \_|   \__,_|/___|/___|\___||_| 
- ------------------------------------ By Ludde ----
-```
 A subdomain fuzzer that uses a user-specified wordlist to find subdomains for a domain.
 
 ## Installation
