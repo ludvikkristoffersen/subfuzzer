@@ -1,5 +1,5 @@
-![SubFuzzer](https://dl.dropboxusercontent.com/scl/fi/vbns1l45udetirwnc9ngx/subfuzzer.jpg.jpg?rlkey=982a8juoq686qze59ym726wbf&dl=0)
-A subdomain fuzzer that uses a user-specified wordlist to find subdomains for a domain.
+![SubFuzzer](https://dl.dropboxusercontent.com/scl/fi/d1imalqooilwhe7qifuow/subfuzzerv2.jpg?rlkey=1qxbt8m8elzw7mt5q25o5b7m7&dl=0)
+*A subdomain fuzzer that uses a user-specified wordlist to find subdomains for a domain.*
 
 ## Installation
 ```
